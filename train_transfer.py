@@ -295,11 +295,6 @@ if __name__ == '__main__':
                         help='Use cuda to train model')
     parser.add_argument('--visdom', default=True, type=str2bool,
                         help='Use visdom for loss visualization')
-    # parser.add_argument('--start_iter', default=0, type=int,
-    #                     help='Resume training at this iter')
-    # parser.add_argument('--dataset_root', default='/media/disk/Backup/ZhengFeng/SSD/data/WIDER',
-    #                     help='Dataset root directory path')
-
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     args = parser.parse_args()
