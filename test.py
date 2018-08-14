@@ -87,7 +87,7 @@ def Test(para, net, cuda):
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='cifar10')
-    parser.add_argument('--trained_model', default='/media/disk/Backup/ZhengFeng/Image_forensics/cifar10/cifar10_weights_0.1_VGG_data_aug/current_144830.pth',
+    parser.add_argument('--trained_model', default='TRAIN/current_144830.pth',
                         type=str, help='Trained state_dict file path to open')
     parser.add_argument('--cuda', default=True, type=bool,
                         help='Use cuda to train model')
